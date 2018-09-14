@@ -12,7 +12,7 @@ In preparation to create a reporting database,
 Please supply a Template Customer database.
 Additionally, Please create a DatabaseDestination which has same exact schema/tables as Template database. It can be a empty shell db.
 I created ReportingDB. One can use publish profile or schema compare, etc to generate the empty shell Reportingdb.
-Please edit the variables before running.
+You can edit the variables before running.
 
 declare @DatabaseTemplate nvarchar(max) = 'CustomerTemplate'
 declare @DatabaseDestination nvarchar(max) = 'ReportingDb'
