@@ -26,7 +26,8 @@ It will grab All tables from All databases into one database, and create one vie
 However, View performance will be slow. This is due to selecting many binary trees in different dbs on different pages.
 
 Result:
-Create View customerVw as 
+        
+	Create View customerVw as 
 		
 
 	SELECT 
@@ -54,7 +55,8 @@ Create View customerVw as
 2) Since views are slow, we can utilize StoredProcedure which will materialize a table, I will need to add in code for CreateDate and UpdateDate in a where clause.
 
 Result: 
-Create Procedure customerImport as
+        
+	Create Procedure customerImport as
 	Insert into customer
 	( 
 		[customerid], 
