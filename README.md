@@ -12,7 +12,7 @@ In preparation to create a reporting database,
 Please supply a Template Customer database.
 Additionally, Please create a DatabaseDestination which has same exact schema/tables as Template database. It can be a empty shell db.
 I created ReportingDB. One can use publish profile or schema compare, etc to generate the empty shell Reportingdb.
-If all databases have same exact schema, Please edit the variables before running.
+Please edit the variables before running.
 
 declare @DatabaseTemplate nvarchar(max) = 'CustomerTemplate'
 declare @DatabaseDestination nvarchar(max) = 'ReportingDb'
@@ -94,21 +94,21 @@ Prepare another text file naming all the databases in separate lines, which ones
 This will print out which databases have a schema difference.
 
 
-#OriginalDacpac – Right click on a database in SSMS and Task Generate Scripts
-$OriginalScript = 'C:\Users\Ritwik\Desktop\DatabaseCompare\OriginalScript.sql'
+	#OriginalDacpac – Right click on a database in SSMS and Task Generate Scripts
+	$OriginalScript = 'C:\Users\Ritwik\Desktop\DatabaseCompare\OriginalScript.sql'
 
-#Source: Place in test file below, list databases by running select * from sys.databases where database_id > 4
-$DatabaseSourceList = 'C:\Users\Ritwik\Desktop\DatabaseCompare\DatabaseList.txt'
+	#Source: Place in test file below, list databases by running select * from sys.databases where database_id > 4
+	$DatabaseSourceList = 'C:\Users\Ritwik\Desktop\DatabaseCompare\DatabaseList.txt'
 
-#Destination: Output Database Files Generate Scripts
-$Filepath='C:\Users\Ritwik\Desktop\DatabaseCompare\scripts' # local directory to save build-scripts to 
-
-
+	#Destination: Output Database Files Generate Scripts
+	$Filepath='C:\Users\Ritwik\Desktop\DatabaseCompare\scripts' # local directory to save build-scripts to 
 
 
-Output:
-Created Database Customer
-CustomerFiles are the same
-Created Database Customer4
-Customer4 Files are different  
+
+
+	Output:
+	Created Database Customer
+	CustomerFiles are the same
+	Created Database Customer4
+	Customer4 Files are different  
 
