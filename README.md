@@ -19,7 +19,7 @@ declare @DatabaseDestination nvarchar(max) = 'ReportingDb'
 
 if you want to exclude databases, Edit this statement
 
-and db_Name(database_id) <> @CustomerTemplate and db_Name(database_id) <> 'Reportingdb' and db_Name(database_id) <> 'mytestdb'
+and db_Name(database_id) <> @DatabaseTemplate and db_Name(database_id) <> 'Reportingdb' and db_Name(database_id) <> 'mytestdb'
 
 View:
 It will grab All tables from All databases into one database, and create one view. 
