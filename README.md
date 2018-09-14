@@ -9,9 +9,10 @@ Before the interview, I created scripts to understand the 800+  database system.
 Currently Esub has 800+ multitenant databases,
 In preparation to create a reporting database,
 
-Please create a DatabaseDestination:
+Please supply a Template Customer database.
+Additionally, Please create a DatabaseDestination which has same exact schema/tables as Template database. It can be a empty shell database.
 I created ReportingDB
-If all databases have same exact schema, Please supply a template database.
+If all databases have same exact schema, 
 
 declare @DatabaseTemplate nvarchar(max) = 'Customer2'
 declare @DatabaseDestination nvarchar(max) = 'ReportingDb'
